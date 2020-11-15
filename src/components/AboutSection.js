@@ -1,9 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 import home1 from "../img/home1.png";
 
 export default function AboutSection() {
   return (
-    <div>
+    <About>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -27,6 +28,16 @@ export default function AboutSection() {
       <div className="image">
         <img src={home1} alt="guy with a camera" />
       </div>
-    </div>
+    </About>
   );
 }
+
+// styled components
+const About = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+`;
